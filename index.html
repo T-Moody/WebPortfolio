@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Portfolio for Tyler Moody</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <!-- Left icon bar for larger screens-->
+    <nav class="sidebar">
+          <!-- Avatar image in top left corner -->
+          <img src="images/logo.png">
+          <!-- Icons for nav menu -->
+          <a href="#home">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+          </a>
+          <a href="#about">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+          </a>
+          <a href="#projects">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PROJECTS</p>
+          </a>
+          <a href="#resume">
+            <i class="fa fa-book w3-xxlarge"></i>
+            <p>RESUME</p>
+          </a>
+          <a href="#contact">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+          </a>
+    </nav>
+    
+    <!-- Navbar on small screens -->
+    <div id="mobileNavbar">
+        <div class>
+            <a href="#home" class="bar-item button">HOME</a>
+            <a href="#about" class="bar-item button">ABOUT</a>
+            <a href="#projects" class="bar-item button">PROJECTS</a>
+            <a href="#resume" class="bar-item button">RESUME</a>
+            <a href="#contact" class="bar-item button">CONTACT</a>
+        </div>
+    </div>
+    
+    <!-- Page Content -->
+    <main>
+       <!-- Header/Home -->
+        <header id="home">
+            <h1><span>Tyler Moody</span></h1>
+            <p>Computer Science Student</p>
+        </header>
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, my name is Tyler Moody. I am currently a student pursuing a degree in Computer Science. Some of my favorite things to do are exercising, playing board games, and programming! I have a strong interest in backend development and phone applications. On this page you will learn more about my experience and you will be able to view projects that I have worked on. Hopefully after viewing this page, you will know what I am all about!
+            </p>
+            <h3>My Skills</h3>
+            <ul>
+                <li>Java</li>
+                <li>Git</li>
+                <li>C#</li>
+                <li>Website Development</li>
+            </ul>    
+        <!-- End About Section -->
+        </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+        <!-- End Projects Section -->
+        </section>
+        
+        <!-- Resume Section -->
+        <section id="resume">
+           <h2>My Resume</h2>
+            <iframe src="images/Tyler%20Moody%20Resume%20finale.pdf" width="50%" height="500px" type="application/pdf">
+            </iframe>
+            <button>
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+        <!-- End Resume Section -->
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div>
+                 <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Michigan</p>
+                 <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (989)-975-2070</p>
+                 <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tpmoody@delta.edu
+            </div>
+        <!-- End Contact Section -->    
+        </section>
+        <footer>
+            <i class="fa fa-github w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </footer>
+    </main>
+</body>

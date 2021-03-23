@@ -1,0 +1,53 @@
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+nav img {
+    position: relative;
+    width: 40px;
+}
+.sidebar {
+	height: 100%;
+	width: 200px;
+	background-color: #fff;
+	position: fixed!important;
+	z-index: 1;
+	overflow: auto;
+    float: left;
+}
+
+main {
+    padding: 12px 200px;
+    
+}
+
+#mobileNavbar {
+    display: none;
+}
+
+.bar-item button
+{
+    width: 20%;
+}
+
+@media (max-width:1205) {
+    
+}
+
+@media (max-width:600px) {
+    .sidebar {
+        display: none;
+    }
+    #mobileNavbar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        background-color: #ffff;
+        text-align: center;
+    }
+    .bar-item button {
+        justify-content: space-between;
+    }
+}
