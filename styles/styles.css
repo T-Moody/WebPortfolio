@@ -4,11 +4,11 @@ body {
     font-size: 15px;
     line-height: 1.5;
 }
-nav img {
+#sidebar img {
     position: relative;
     width: 40px;
 }
-.sidebar {
+#sidebar {
 	height: 100%;
 	width: 200px;
 	background-color: #fff;
@@ -26,6 +26,11 @@ main {
 #mobileNavbar {
     display: none;
 }
+#mobileNavbar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 .bar-item button
 {
@@ -37,17 +42,21 @@ main {
 }
 
 @media (max-width:600px) {
-    .sidebar {
+    #sidebar {
         display: none;
     }
     #mobileNavbar {
-        display: block;
+        display: flex;
         width: 100%;
         position: fixed;
+        bottom: 0;
         background-color: #ffff;
         text-align: center;
     }
-    .bar-item button {
+    #mobileNavbar ul {
         justify-content: space-between;
     }
+    #mobileNavbar ul li {
+        display: inline;
+    
 }
