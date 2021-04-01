@@ -4,11 +4,11 @@ body {
     font-size: 15px;
     line-height: 1.5;
 }
-#sidebar img {
+nav img {
     position: relative;
     width: 40px;
 }
-#sidebar {
+.sidebar {
 	height: 100%;
 	width: 200px;
 	background-color: #fff;
@@ -23,40 +23,45 @@ main {
     
 }
 
-#mobileNavbar {
-    display: none;
-}
-#mobileNavbar li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.bar-item button
-{
-    width: 20%;
-}
-
 @media (max-width:1205) {
     
 }
 
 @media (max-width:600px) {
-    #sidebar {
+    .sidebar {
         display: none;
     }
-    #mobileNavbar {
-        display: flex;
+    .mobileNavbar {
+        display: block;
         width: 100%;
         position: fixed;
-        bottom: 0;
         background-color: #ffff;
         text-align: center;
     }
-    #mobileNavbar ul {
-        justify-content: space-between;
+    .mobileNavbar {
+        display: none;
     }
-    #mobileNavbar ul li {
-        display: inline;
+    .mobileNavbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+    }
     
+    .mobileNavbar ul li {
+        flex-basis: 20%;  /* 160 / 800 x 100 */
+    }
+    .mobileNavbar ul li a {
+        display: block;
+        text-align: center;
+        padding: 1em 0;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .bar-item button {
+        justify-content: space-between;
+        background-color: blue;
+    }
 }
