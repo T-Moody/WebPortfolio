@@ -12,20 +12,21 @@ body {
     margin: 0;
 }
 
-head {
-    grid-area: head;
-    padding-left: 120px;
+/* Styles for header */
+header {
+    padding: 12px 24px;
+    text-align: center;
 }
 
 main {
     display: block;
     grid-area: main;
-    margin-left: 120px;
     padding: 12px 24px;
 }
 
 footer {
     grid-area: footer;
+    padding: 12px 24px;
 }
 
 #navbar {
@@ -70,7 +71,81 @@ footer {
     font-size: 18px;
 }
 
+/* Styles for project section */
+.container {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 320px;
+    background: lightgreen;
+    border: 1px solid black;
+    margin: 20px;
+    transition: 0.2s;
+}
+
+.card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, grey,lightblue);
+}
+
+.card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.card:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 20px 4rem rgba(0, 0, 0, 0.5);
+}
+
+.card-button {
+    display: block;
+    color: gray;
+    text-align: center;
+    background: linear-gradient(to right, grey,lightblue);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.card-button span {
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+
+.card-button:hover,
+.card-button:active {
+    background-color: indigo;
+}
+
+.card-button:hover span,
+.card-button:active span {
+    margin-left: 1.5rem;
+}
+
 @media (min-width:600px) {
+    header, main, footer {
+        margin: 120px;
+    }
+
     #navbar {
         display: block;
         height: 100%;
@@ -98,8 +173,4 @@ footer {
         margin: 10px 0;
     }
 
-}
-
-@media (max-width:1200px) {
-    
 }
