@@ -27,6 +27,7 @@ main {
 footer {
     grid-area: footer;
     padding: 12px 24px;
+    margin-bottom: 55px;
 }
 
 #navbar {
