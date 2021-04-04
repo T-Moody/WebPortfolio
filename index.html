@@ -40,8 +40,8 @@
 
     <!-- Header/Home -->
     <header id="home">
-        <h1><span>Tyler Moody</span></h1>
-        <p>Computer Science Student</p>
+        <h1 id="home-header"><span>Tyler<br>Moody</span></h1>
+        <p id="home-content">Computer Science Student</p>
     </header>
     
     <!-- Page Content -->
@@ -127,11 +127,25 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
+            <hr>
             <div>
                  <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Michigan</p>
                  <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (989)-975-2070</p>
-                 <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tpmoody@delta.edu
+                 <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tpmoody@delta.edu</p>
             </div>
+            <h3>Send me a message!</h3>
+            <form>
+                <p class="contact-input"><input type="text" placeholder="Name" required name="Name"></p>
+                <p class="contact-input"><input type="text" placeholder="Email" required name="Email"></p>
+                <p class="contact-input"><input type="text" placeholder="Subject" required name="Subject"></p>
+                <p class="contact-input"><input type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+
         <!-- End Contact Section -->    
         </section>
     </main>

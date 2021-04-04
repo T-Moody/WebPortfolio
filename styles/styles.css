@@ -1,11 +1,6 @@
 html,
 body {
-    display: grid;
-    grid-template: repeat(3, auto) auto;
-    grid-template-areas: 
-        "head"
-        "main"
-        "footer";
+    display: block;
     font-family: Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.5;
@@ -18,18 +13,30 @@ header {
     text-align: center;
 }
 
+/* Styles for main */
+
 main {
     display: block;
-    grid-area: main;
     padding: 12px 24px;
 }
 
+/* Styles for about section */
+#home {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+#home-header {
+    font-size: 64px;
+}
+
+/* Styles for footer */
 footer {
-    grid-area: footer;
     padding: 12px 24px;
     margin-bottom: 55px;
 }
 
+/* Styles for small screen navbar */
 #navbar {
     position: fixed;
     bottom: 0;
@@ -95,7 +102,7 @@ footer {
     width: 320px;
     background: lightgreen;
     border: 1px solid black;
-    margin: 20px;
+    margin: 10px;
     transition: 0.2s;
 }
 
@@ -110,7 +117,7 @@ footer {
     text-align: center;
     font-size: 18px;
 }
-.card:hover {
+.card:in-range {
     transform: translateY(-0.5%);
     box-shadow: 0 20px 4rem rgba(0, 0, 0, 0.5);
 }
@@ -131,28 +138,33 @@ footer {
     transition: 0.2s;
 }
 
-
-.card-button:hover,
-.card-button:active {
-    background-color: indigo;
+/* Styles for contact me section */
+#contact hr {
+    width: 200px;
+    margin-left: 0px;
 }
 
-.card-button:hover span,
-.card-button:active span {
-    margin-left: 1.5rem;
+.contact-input input {
+    width: 90%;
+    height: 60px;
 }
 
+/* Syles for wide screens */
 @media (min-width:600px) {
     header, main, footer {
-        margin: 120px;
+        margin-left: 120px;
+        padding-left: 140px;
+        padding-right: 140px;
     }
 
     #navbar {
         display: block;
+        position: fixed;
         height: 100%;
         width: 120px;
         background-color: #fff;
         overflow: none;
+        overflow-y: auto;
     }
 
     #navbar img {
@@ -172,6 +184,21 @@ footer {
 
     .nav_text {
         margin: 10px 0;
+    }
+
+    .card:hover {
+        transform: translateY(-0.5%);
+        box-shadow: 0 20px 4rem rgba(0, 0, 0, 0.5);
+    }
+
+    .card-button:hover,
+    .card-button:active {
+        background-color: indigo;
+    }
+
+    .card-button:hover span,
+    .card-button:active span {
+        margin-left: 1.5rem;
     }
 
 }
