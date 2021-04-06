@@ -1,3 +1,9 @@
+:root {
+    --page-background-color: #052339;
+    --page-header-color: #fba342;
+    --page-text-color: #959595;
+}
+
 html,
 body {
     display: block;
@@ -81,8 +87,7 @@ footer {
 
 /* Styles for project section */
 .container {
-    width: 90%;
-    margin: 50px auto;
+    width: 100%;  
 }
 
 .heading {
@@ -99,21 +104,24 @@ footer {
 }
 
 .card {
-    width: 320px;
+    width: 300px;
+    max-width: 320px;
+    min-width: none;
     background: lightgreen;
     border: 1px solid black;
-    margin: 10px;
+    margin: 2px;
+    margin-top: 10px;
     transition: 0.2s;
 }
 
 .card-header {
     text-align: center;
-    padding: 50px 10px;
+    padding: 25px 10px;
     background: linear-gradient(to right, grey,lightblue);
 }
 
 .card-body {
-    padding: 30px 20px;
+    padding: 10px 10px;
     text-align: center;
     font-size: 18px;
 }
@@ -145,16 +153,42 @@ footer {
 }
 
 .contact-input input {
-    width: 90%;
+    box-sizing: border-box;
+    width: 100%;
     height: 60px;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
+  .padding-64 {
+      padding-top: 64px;
+      padding-bottom: 64px;
+  }
+
+  .background-color {
+      background-color: var(--page-background-color);
+  }
+
+  .header-color {
+      color: var(--page-header-color);
+  }
+
+  .text-color {
+      color: var(--page-text-color);
+  }
 /* Syles for wide screens */
 @media (min-width:600px) {
-    header, main, footer {
+    #main {
         margin-left: 120px;
-        padding-left: 140px;
-        padding-right: 140px;
+        padding: 12px 24px;
+        transition: margin-left .4s;
+    }
+
+    header, main, footer {
+        max-width: 980px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #navbar {

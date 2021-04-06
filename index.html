@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
-<body>
+<body class=background-color>
     
     <!-- Navbar -->
     <nav id="navbar">
@@ -38,122 +38,124 @@
         </a>
     </nav>
 
-    <!-- Header/Home -->
-    <header id="home">
-        <h1 id="home-header"><span>Tyler<br>Moody</span></h1>
-        <p id="home-content">Computer Science Student</p>
-    </header>
+    <div id="main">
+        <!-- Header/Home -->
+        <header id="home" class="padding-64">
+            <h1 id="home-header"><span class="header-color">Tyler<br>Moody</span></h1>
+            <p id="home-content" class="text-color">Computer Science Student</p>
+        </header>
     
-    <!-- Page Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello, my name is Tyler Moody. I am currently a student pursuing a degree in Computer Science. Some of my favorite things to do are exercising, playing board games, and programming! I have a strong interest in backend development and phone applications. On this page you will learn more about my experience and you will be able to view projects that I have worked on. Hopefully after viewing this page, you will know what I am all about!
-            </p>
-            <h3>My Skills</h3>
-            <ul>
-                <li>Java</li>
-                <li>Git</li>
-                <li>C#</li>
-                <li>Website Development</li>
-            </ul>    
-        <!-- End About Section -->
-        </section>
-        <!-- Projects Section -->
-        <section id="projects">
-             <div class="container">
-                <div class="heading">
-                    <h2>My Projects</h2>
-                </div>
-                <!--div for cards-->
-                <div class="row">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>Java</h2>
-                        </div>
-                        <div class="card-body">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
-                                obcaecati.
-                            </p>
-                            <a href="#" class="card-button">Demo<span>&rarr;</span></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>Java</h2>
-                        </div>
-                        <div class="card-body">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
-                                obcaecati.
-                            </p>
-                            <a href="#" class="card-button">Demo<span>&rarr;</span></a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>Java</h2>
-                        </div>
-                        <div class="card-body">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
-                                obcaecati.
-                            </p>
-                            <a href="#" class="card-button">Demo <span>&rarr;</span></a>
-                        </div>
-                    </div>
-                    <!--End of cards-->
-                </div>
-            </div>
-        <!-- End Projects Section -->
-        </section>
-        
-        <!-- Resume Section -->
-        <section id="resume">
-           <h2>My Resume</h2>
-            <iframe src="images/Tyler%20Moody%20Resume%20finale.pdf" width="50%" height="500px" type="application/pdf">
-            </iframe>
-            <button>
-                <i class="fa fa-download"></i> Download Resume
-            </button>
-        <!-- End Resume Section -->
-        </section>
-        
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <hr>
-            <div>
-                 <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Michigan</p>
-                 <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (989)-975-2070</p>
-                 <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tpmoody@delta.edu</p>
-            </div>
-            <h3>Send me a message!</h3>
-            <form>
-                <p class="contact-input"><input type="text" placeholder="Name" required name="Name"></p>
-                <p class="contact-input"><input type="text" placeholder="Email" required name="Email"></p>
-                <p class="contact-input"><input type="text" placeholder="Subject" required name="Subject"></p>
-                <p class="contact-input"><input type="text" placeholder="Message" required name="Message"></p>
-                <p>
-                    <button type="submit">
-                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                    </button>
+        <!-- Page Content -->
+        <main class="padding-64">
+            <!-- About Section -->
+            <section id="about" class="padding-64">
+                <h2 class="header-color">About Me</h2>
+                <p class="text-color">Hello, my name is Tyler Moody. I am currently a student pursuing a degree in Computer Science. Some of my favorite things to do are exercising, playing board games, and programming! I have a strong interest in backend development and phone applications. On this page you will learn more about my experience and you will be able to view projects that I have worked on. Hopefully after viewing this page, you will know what I am all about!
                 </p>
-            </form>
+                <h3 class="header-color">My Skills</h3>
+                <ul>
+                    <li class="text-color">Java</li>
+                    <li class="text-color">Git</li>
+                    <li class="text-color">C#</li>
+                    <li class="text-color">Website Development</li>
+                </ul>    
+            <!-- End About Section -->
+            </section>
+            <!-- Projects Section -->
+            <section id="projects" class="padding-64">
+                <div class="container">
+                    <div class="heading">
+                    <h2 class="header-color">My Projects</h2>
+                    </div>
+                    <!--div for cards-->
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Java</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
+                                    obcaecati.
+                                </p>
+                                <a href="#" class="card-button">Demo<span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Java</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
+                                    obcaecati.
+                                </p>
+                                <a href="#" class="card-button">Demo<span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Java</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                    Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
+                                    obcaecati.
+                                </p>
+                                <a href="#" class="card-button">Demo <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                        <!--End of cards-->
+                    </div>
+                </div>
+            <!-- End Projects Section -->
+            </section>
+        
+            <!-- Resume Section -->
+            <section id="resume" class="padding-64">
+                <h2 class="header-color">My Resume</h2>
+                <iframe src="images/Tyler%20Moody%20Resume%20finale.pdf" width="50%" height="500px" type="application/pdf">
+                </iframe>
+                <button>
+                    <i class="fa fa-download"></i> Download Resume
+                </button>
+            <!-- End Resume Section -->
+            </section>
+        
+            <!-- Contact Section -->
+            <section id="contact" class="padding-64">
+                <h2 class="header-color">Contact Me</h2>
+                <hr>
+                <div>
+                    <p class="text-color"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Michigan</p>
+                    <p class="text-color"><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (989)-975-2070</p>
+                    <p class="text-color"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tpmoody@delta.edu</p>
+                </div>
+                <h3 class="text-color">Send me a message!</h3>
+                <form>
+                    <p class="contact-input"><input type="text" placeholder="Name" required name="Name"></p>
+                    <p class="contact-input"><input type="text" placeholder="Email" required name="Email"></p>
+                    <p class="contact-input"><input type="text" placeholder="Subject" required name="Subject"></p>
+                    <p class="contact-input"><input type="text" placeholder="Message" required name="Message"></p>
+                    <p>
+                        <button type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </p>
+                </form>
 
-        <!-- End Contact Section -->    
-        </section>
-    </main>
+            <!-- End Contact Section -->    
+            </section>
+        </main>
 
-    <!-- Footer -->
-    <footer>
-        <i class="fa fa-github w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </footer>
+        <!-- Footer -->
+        <footer class="padding-64 text-color">
+            <i class="fa fa-github w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </footer>
+    </div>
 </body>
