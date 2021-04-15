@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
+    <script type="text/javascript" src="js/blur.js"></script>
 </head>
-<body class=background-color>
+<body class="background-color">
     
     <!-- Navbar -->
-    <nav id="navbar">
+    <nav id="navbar" class="blur">
         <img src="images/triforceLogo.png">
         <a href="#home" class="nav_link">
             <i class="material-icons nav_icon">home</i>
@@ -38,7 +39,7 @@
         </a>
     </nav>
 
-    <div id="main">
+    <div id="main" class="blur">
         <!-- Header/Home -->
         <header id="home" class="padding-64">
             <h1 id="home-header"><span class="header-color">Tyler<br>Moody</span></h1>
@@ -71,7 +72,7 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-header">
-                                <h2>Java</h2>
+                                <h2>Bridge Toll</h2>
                             </div>
                             <div class="card-body">
                                 <p>
@@ -79,7 +80,7 @@
                                     Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
                                     obcaecati.
                                 </p>
-                                <a href="#" class="card-button">Demo<span>&rarr;</span></a>
+                                <a onclick="toggle1()" id="bridge-button" class="card-button">Demo<span>&rarr;</span></a>
                             </div>
                         </div>
                         <div class="card">
@@ -92,7 +93,7 @@
                                     Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
                                     obcaecati.
                                 </p>
-                                <a href="#" class="card-button">Demo<span>&rarr;</span></a>
+                                <a onclick="toggle2()" class="card-button">Demo<span>&rarr;</span></a>
                             </div>
                         </div>
                         <div class="card">
@@ -105,7 +106,7 @@
                                     Beatae cumque quasi maxime nostrum! Reprehenderit nostrum 
                                     obcaecati.
                                 </p>
-                                <a href="#" class="card-button">Demo <span>&rarr;</span></a>
+                                <a onclick="toggle3()" class="card-button">Demo <span>&rarr;</span></a>
                             </div>
                         </div>
                         <!--End of cards-->
@@ -156,6 +157,22 @@
             <i class="fa fa-github w3-hover-opacity"></i>
             <i class="fa fa-twitter w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <!-- End Footer Section-->
         </footer>
     </div>
+
+    <!-- Popup Section -->
+    <div id="popup1" class="popup">
+        <img src="images/bridge.gif" alt="Demo of brige toll program">
+        <a onclick="toggle1()" class="card-button">Close</a>
+    </div>
+    <div id="popup2" class="popup">
+        <img src="images/quiz.gif" alt="Demo of quiz program">
+        <a onclick="toggle2()" class="card-button">Close</a>
+    </div>
+    <div id="popup3" class="popup">
+        <img src="images/bridge.gif" alt="Demo of brige toll program">
+        <a onclick="toggle3()" class="card-button">Close</a>
+    </div>
+    <!-- End Popup Section-->
 </body>
