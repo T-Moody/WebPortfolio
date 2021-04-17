@@ -157,7 +157,7 @@ footer {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 850px;
+    width: 80%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
     background: #fff;
@@ -171,6 +171,10 @@ footer {
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
+}
+
+.demo-img {
+    width: 100%;
 }
 
 /* Styles for contact me section */
@@ -260,6 +264,10 @@ footer {
     .card-button:hover span,
     .card-button:active span {
         margin-left: 1.5rem;
+    }
+
+    .popup {
+        max-width: 850px;
     }
 
 }
