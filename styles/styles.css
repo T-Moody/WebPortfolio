@@ -36,8 +36,109 @@ main {
     font-size: 64px;
 }
 
+.skill-inner {
+    padding-top: 20px;
+}
+
+.skill-header {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.skill-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+}
+
+.skill-box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill-box:hover .skill-img {
+    transform: translateY(-10px);
+}
+
+.skill-box:hover > .skill-title:after, .skill-box > .skill-title::before {
+    width: 50px;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 4px;
+    border-radius: 2px 0px 0px 2px;
+    background-color: #2ecc71;
+    transition: .5s;
+}
+
+.skill-img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.skill-img::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 50%;
+    height: 90px;
+    background: rgba(100, 100, 100, 0.2);
+    border-radius: 45px 0 0 45px;
+    transition: .5s;
+}
+
+.skill-title h3 {
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.skill-icon {
+    width: 50px; 
+}
 /* Styles for footer */
 footer {
+    font-size: 32px;
     padding: 12px 24px;
     margin-bottom: 55px;
 }
@@ -52,6 +153,7 @@ footer {
     background-color: white;
     display: flex;
     overflow-x: auto;
+    z-index: 1;
 }
 #navbar img {
     display: none;
@@ -91,7 +193,6 @@ footer {
 }
 
 .heading {
-    text-align: center;
     font-size: 30px;
     margin-bottom: 50px;
 }
@@ -179,12 +280,18 @@ footer {
     width: 100%;
 }
 
-/* Styles for contact me section */
-#contact hr {
-    width: 200px;
-    margin-left: 0px;
+/* Styles for resume section */
+
+.resume-link {
+    text-decoration: none;
+    color: black;
 }
 
+.pdf-viewer {
+    margin-top: 20px;
+}
+
+/* Styles for contact me section */
 .contact-input input {
     box-sizing: border-box;
     width: 100%;
@@ -194,9 +301,20 @@ footer {
     box-sizing: inherit;
   }
 
+  /* Styles for general layout */
   .padding-64 {
       padding-top: 64px;
       padding-bottom: 64px;
+  }
+
+  .header-size {
+      font-size: 35px;
+      margin-bottom: 20px;
+  }
+
+  .header-hr {
+    width: 200px;
+    margin-left: 0px;
   }
 
   .background-color {
