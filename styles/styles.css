@@ -141,6 +141,11 @@ footer {
     margin-bottom: 55px;
 }
 
+.social-link {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Styles for small screen navbar */
 #navbar {
     position: fixed;
@@ -279,10 +284,16 @@ footer {
 }
 
 /* Styles for resume section */
+#resume-button {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 240px;
+}
 
 .resume-link {
     text-decoration: none;
     color: black;
+    width: 100%;
 }
 
 .pdf-viewer {
@@ -297,6 +308,18 @@ footer {
 }
 *, *:before, *:after {
     box-sizing: inherit;
+  }
+
+  #submit-button {
+    font-size: 20px;
+    width: 240px;
+  }
+
+  #message-success {
+      color: var(--page-header-color);
+      font-size: 40px;
+      margin-top: 20px;
+      text-align: center;
   }
 
   /* Styles for general layout */
@@ -374,6 +397,10 @@ footer {
         padding-bottom: 1rem;
         margin: auto;
         max-width: 600px;
+    }
+
+    .skill-box {
+        width: 20%;
     }
 
     .card:hover {
