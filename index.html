@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="js/blur.js"></script>
+    <script type="text/javascript" src="js/sendEmail.js"></script>
 </head>
 <body class="background-color">
     
@@ -211,7 +212,7 @@
                 <hr class="header-hr">
                 <div>
                     <p class="text-color"><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Michigan</p>
-                    <p class="text-color"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tpmoody@delta.edu</p>
+                    <p class="text-color"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tylermoody@delta.edu</p>
                 </div>
                 <h3 class="text-color">Send me a message!</h3>
                 <form>
@@ -220,7 +221,7 @@
                     <p class="contact-input"><input type="text" id="subject" placeholder="Subject" required name="Subject"></p>
                     <p class="contact-input"><input type="text" id="message" placeholder="Message" required name="Message"></p>
                     <p>
-                        <button id="submit-button" type="submit" class="fa fa-paper-plane"> SEND MESSAGE </button>
+                        <button id="submit-button" type="submit" onclick="sendEmail()" class="fa fa-paper-plane"> SEND MESSAGE </button>
                     </p>
                     <p id="message-success">Thank You!</p>
                 </form>

@@ -320,6 +320,7 @@ footer {
       font-size: 40px;
       margin-top: 20px;
       text-align: center;
+      display: none;
   }
 
   /* Styles for general layout */
