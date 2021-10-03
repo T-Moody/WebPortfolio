@@ -24,3 +24,9 @@ function toggle3() {
     var popup = document.getElementById("popup3");
     popup.classList.toggle("active");
 }
+
+function toggle4() {
+    toggleBlur();
+    var popup = document.getElementById("popup4");
+    popup.classList.toggle("active");
+}
