@@ -30,3 +30,9 @@ function toggle4() {
     var popup = document.getElementById("popup4");
     popup.classList.toggle("active");
 }
+
+function toggle5() {
+    toggleBlur();
+    var popup = document.getElementById("popup5");
+    popup.classList.toggle("active");
+}
